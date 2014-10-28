@@ -10,6 +10,9 @@ class Crails < Formula
   depends_on 'boost'
   depends_on 'cpp-netlib'
 
+  depends_on 'mongo-cxx-driver' => :optional
+  depends_on 'soci'             => :optional
+
   def install
     args = std_cmake_args
 
