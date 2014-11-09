@@ -17,9 +17,9 @@ class Crails < Formula
 
   def install
     args  = std_cmake_args
-    args << '-DUSE_MONGODB=ON' if build.with?    'mongo-cxx-driver'
-    args << '-DUSE_SOCI=ON'    if build.with?    'soci'
-    args << '-DUSE_ASYNC=ON'   if build.include? 'async'
+    args << '-DUSE_MONGODB=ON'     if build.with?    'mongo-cxx-driver'
+    args << '-DUSE_SOCI=ON'        if build.with?    'soci'
+    args << '-DUSE_MULTITHREAD=ON' if build.include? 'async'
 
     # Install Boots
     system 'cd', 'Boots'
