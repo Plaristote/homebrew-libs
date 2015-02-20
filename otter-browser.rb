@@ -1,6 +1,6 @@
 require "formula"
 
-class Crails < Formula
+class OtterBrowser < Formula
   homepage "https://github.com/Emdek/otter"
 
   head 'https://github.com/Emdek/otter.git'
