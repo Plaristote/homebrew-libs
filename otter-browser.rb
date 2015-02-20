@@ -1,7 +1,7 @@
 require "formula"
 
 class OtterBrowser < Formula
-  homepage "https://github.com/Emdek/otter"
+  homepage "http://otter-browser.org/"
 
   head 'https://github.com/Emdek/otter.git'
 
