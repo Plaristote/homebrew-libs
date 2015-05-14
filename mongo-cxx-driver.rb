@@ -13,6 +13,6 @@ class MongoCxxDriver < Formula
   depends_on 'scons' => :build
 
   def install
-    system 'scons --ssl --prefix=/usr/local --sharedclient install'
+    system 'scons --ssl --prefix=/usr/local --sharedclient --c++11 install'
   end
 end
